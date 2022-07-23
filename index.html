@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
+    <title>Find Info IP</title>
+  </head>
+  <body>
+    <style>
+      input[type="text"] {
+        text-align: center;
+      }
+
+      input[type="text"]:hover {
+        border: 2px solid white;
+      }
+    </style>
+
+    <main class="container">
+      <form id="form">
+        <label>
+          <input id="text" type="text" placeholder="Enter the IP" required />
+        </label>
+        <small> For example: 54.85.132.205</small>
+        <button type="submit" id="submit">
+          Find information about this IP
+        </button>
+      </form>
+
+      <div>
+        <pre id="results"></pre>
+      </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
